@@ -1,3 +1,4 @@
+This is the complete code without database(MySql).
 This is a registration form that accepts user inputs and processes using php and generate a successful message with relevant details.
 html , css and javascript is used for frontend.
 php to process the details and display the message.
