@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Pitch Submission</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Your Startup Pitch</h1>
+        <form id="pitchForm" method="POST" action="submit.php" enctype="multipart/form-data">
+
+            <label for="founderName">Founder Name:</label>
+            <input type="text" id="founderName" name="founderName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="country">Country:</label>
+            <select class="country" id="country" name="country" required>
+                <option value="IN">Select a Country</option>
+                <option value="India">India</option>
+                <option value="UK">United kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="Others">Other</option>
+            </select>
+
+            <label for="StartUpName">StartUp Name:</label>
+            <input type="StartUpName" id="StartUpName" name="StartUpName" required>
+
+            <label for="pitchDesc">Pitch Description:</label>
+            <textarea class="pitch" id="pitchDesc" name="pitchDesc" rows="5" required></textarea>
+
+            
+
+            <button type="submit">Submit Pitch</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
